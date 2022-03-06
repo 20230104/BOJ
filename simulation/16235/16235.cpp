@@ -160,7 +160,7 @@ public:
 
 int main()
 {
-    //freopen("05.txt", "r", stdin);
+    freopen("1000.txt", "r", stdin);
 
     s sol;
     sol.ution();
