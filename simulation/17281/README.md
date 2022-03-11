@@ -1,10 +1,13 @@
-[⚾](https://www.acmicpc.net/problem/17281)
+#17281:[⚾](https://www.acmicpc.net/problem/17281)
 
+## 기본 아이디어
 next_permutation을 이용한 탐색 경우의 수 8!개  
-각 simulation을 돌림 cnt와 tmp[3]를 이용한 빠른 계산  
+각 simulation을 돌릴때 3개의 아웃이 모이기 전 최대 3개의 타구만 살펴 점수를 계산할 수 있음
 
-최적화  
+## 최적화  
 남은 이닝x24 보다 차이가 클 경우 계산 종료 
 
-시도해 볼 것  
-tmp[3]조차 사용하지 말기 - 성공
+## 시도해 볼 것  
+- [X] tmp[3]조차 사용하지 말것
+  * cnt++, tmp에 값 복사를 스킵함으로써 최적화
+- [ ] out count를 3개 추적하는 과정을 더 빠르게 만들 수 있지 않을까?
