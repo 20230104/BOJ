@@ -84,7 +84,6 @@ public:
 
 int main()
 {
-    freopen("04.txt", "r", stdin);
     s sol;
     sol.ution();
 
