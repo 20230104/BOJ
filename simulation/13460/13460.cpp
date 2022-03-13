@@ -192,45 +192,12 @@ public:
             }
         }
     }
-
-    void show()
-    {
-        printf("======BRD======\n");
-        for (int i = 0; i < N; i++)
-        {
-            for (int j = 0; j < M; j++)
-            {
-                printf("%c", BRD[i][j]);
-            }
-            printf("\n");
-        }
-        printf("\n");
-        printf("R : %d, %d\nB : %d, %d\n", R.first, R.second, B.first, B.second);
-        printf("\n");
-        printf("\n");
-
-        printf("=====MOVE=====\n");
-        for (int i = 1; i < N - 1; i++)
-        {
-            for (int j = 1; j < M - 1; j++)
-            {
-                printf("%d, %d\n", i, j);
-                for (int d = 0; d < 4; d++)
-                {
-                    printf("(%d, %d) ", MOVE[i][j][d].first, MOVE[i][j][d].second);
-                }
-                printf("\n");
-            }
-        }
-    }
 };
 
 int main()
 {
-    freopen("06.txt", "r", stdin);
     s sol;
     sol.ution();
-    // sol.show();
 
     return 0;
 }
